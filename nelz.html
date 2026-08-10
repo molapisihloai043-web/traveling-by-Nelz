@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nelz Travelling Agency | Affordable Tours Anywhere in South Africa</title>
+<meta name="description" content="Nelz Travelling Agency is a registered South African travel agency booking trips all over SA — Mpumalanga's Panorama Route, Durban, Parys, Clarens, Bloemfontein and beyond, plus international getaways like Bali. 7 years trusted, easy payment plans, group transport for 7+, and WhatsApp support throughout your trip.">
+<meta name="keywords" content="Nelz Travelling Agency, South Africa travel agency, Mpumalanga tours, God's Window, Durban holidays, Parys Stonehenge, Clarens getaways, Bloemfontein travel, group travel South Africa, quad biking South Africa, Bali holidays">
+<meta property="og:title" content="Nelz Travelling Agency | See South Africa's Hidden Gems">
+<meta property="og:description" content="Registered South African travel agency booking trips all over SA and abroad. Luxury made affordable, with easy payment plans, group transport, and real WhatsApp support.">
+<meta property="og:image" content="clouds.jpeg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B2D;
+    --gold:#E8A33D;
+    --gold-soft:#F3C57A;
+    --rust:#B8492B;
+    --rust-dark:#93381F;
+    --sand:#F7F0E3;
+    --sand-dim:#EDE3CE;
+    --white:#FFFFFF;
+    --radius:16px;
+    --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans:'Work Sans', Arial, Helvetica, sans-serif;
+    --shadow: 0 20px 40px -20px rgba(15,27,45,0.45);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--sand);
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  h1,h2,h3{font-family:var(--serif);margin:0;line-height:1.05;}
+  p{margin:0;}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+
+  .wrap{max-width:1120px;margin:0 auto;padding-inline:24px;}
+
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(15,27,45,0.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(232,163,61,0.18);
+  }
+  .nav-inner{
+    max-width:1120px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{
+    font-family:var(--serif);color:var(--sand);font-size:20px;font-weight:600;
+    letter-spacing:0.02em; text-decoration:none;
+  }
+  .brand span{color:var(--gold-soft);}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--gold);color:var(--ink);
+    padding:9px 18px;border-radius:999px;
+    font-weight:600;font-size:14px;text-decoration:none;
+    transition:transform .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--gold-soft);transform:translateY(-1px);}
+
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;align-items:center;
+    background-image:
+      linear-gradient(180deg, rgba(15,27,45,0.55) 0%, rgba(15,27,45,0.75) 100%),
+      url('clouds.jpeg');
+    background-size:cover;
+    background-position:center;
+    padding-top:90px;
+  }
+  .hero-content{
+    position:relative;z-index:2;
+    max-width:640px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .eyebrow{
+    display:inline-block;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    border:1px solid rgba(243,197,122,0.4);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:22px;
+  }
+  .hero h1{
+    color:whitesmoke;
+    font-size:clamp(40px, 6.4vw, 80px);
+    font-family:'Brush Script MT', cursive;
+    text-shadow:2px 2px 6px black;
+    margin-bottom:14px;
+  }
+  .hero-tag{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:500;
+    color:var(--gold-soft);
+    font-size:clamp(20px, 2.6vw, 27px);
+    text-shadow:2px 2px 6px black;
+    margin-bottom:18px;
+  }
+  .hero-sub{
+    color:whitesmoke;
+    text-shadow:2px 2px 6px black;
+    font-size:17px;
+    line-height:1.65;
+    max-width:520px;
+    margin:0 auto 34px;
+  }
+  .hero-actions{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px;
+  }
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:var(--ink);
+    padding:15px 28px;border-radius:999px;
+    font-weight:700;font-size:16px;text-decoration:none;
+    box-shadow:var(--shadow);
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-primary:hover{background:var(--gold-soft);transform:translateY(-2px);}
+  .hero-note{
+    color:whitesmoke;
+    font-size:13px;
+    opacity:0.85;
+  }
+
+  section{padding:96px 0;}
+  .section-head{max-width:640px;margin-bottom:52px;}
+  .kicker{
+    display:block;
+    font-family:var(--sans);font-weight:700;font-size:13px;
+    letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--rust);margin-bottom:14px;
+  }
+  .section-head h2{
+    font-size:clamp(30px,4vw,42px);
+    font-weight:600;
+    color:var(--ink);
+  }
+  .section-head p{
+    margin-top:14px;
+    font-size:16px;
+    color:#4B5768;
+    line-height:1.6;
+  }
+
+  .why{background:var(--sand);}
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+  }
+  .why-card{
+    background:var(--white);
+    border:1px solid rgba(15,27,45,0.08);
+    border-radius:var(--radius);
+    padding:32px 28px;
+    box-shadow:0 12px 30px -22px rgba(15,27,45,0.35);
+  }
+  .why-card h3{
+    font-size:20px;font-weight:600;margin-bottom:10px;color:var(--ink);
+  }
+  .why-card p{
+    font-size:15px;line-height:1.6;color:#4B5768;
+  }
+
+  .destinations{background:var(--ink);}
+  .destinations .section-head h2{color:var(--sand);}
+  .destinations .kicker{color:var(--gold-soft);}
+  .destinations .section-head p{color:var(--sand-dim);}
+  .dest-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+  }
+  .dest-card{
+    background:#16263F;
+    border:1px solid rgba(232,163,61,0.16);
+    border-radius:var(--radius);
+    overflow:hidden;
+    transition:transform .2s ease, border-color .2s ease;
+  }
+  .dest-card:hover{transform:translateY(-4px);border-color:rgba(232,163,61,0.5);}
+  .dest-card img{
+    width:100%;height:170px;object-fit:cover;
+  }
+  .dest-card-body{padding:20px 22px 24px;}
+  .dest-card h3{color:var(--sand);font-size:18px;font-weight:600;margin-bottom:8px;}
+  .dest-card p{color:var(--sand-dim);font-size:14px;line-height:1.6;}
+
+  .abroad-note{
+    margin-top:36px;
+    background:#16263F;
+    border:1px dashed rgba(232,163,61,0.4);
+    border-radius:var(--radius);
+    padding:24px 28px;
+    text-align:center;
+  }
+  .abroad-note p{color:var(--sand-dim);font-size:15px;line-height:1.6;}
+  .abroad-note strong{color:var(--gold-soft);}
+
+  .trust{
+    background:var(--sand-dim);
+    padding:56px 0;
+  }
+  .trust-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:28px;
+    text-align:center;
+  }
+  .trust-item h4{
+    font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ink);margin-bottom:6px;
+  }
+  .trust-item p{font-size:14px;color:#5B6577;}
+
+  .cta-band{
+    background:linear-gradient(135deg, var(--rust) 0%, var(--rust-dark) 100%);
+    color:var(--sand);
+    text-align:center;
+  }
+  .cta-band h2{
+    font-size:clamp(28px,4vw,40px);
+    color:var(--sand);
+    margin-bottom:16px;
+  }
+  .cta-band p{
+    color:rgba(247,240,227,0.85);
+    font-size:16px;
+    max-width:480px;
+    margin:0 auto 30px;
+    line-height:1.6;
+  }
+  .btn-light{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--sand);color:var(--rust-dark);
+    padding:15px 30px;border-radius:999px;
+    font-weight:700;font-size:16px;text-decoration:none;
+    transition:transform .15s ease;
+  }
+  .btn-light:hover{transform:translateY(-2px);}
+
+  footer{
+    background:var(--ink);
+    color:var(--sand-dim);
+    padding:44px 0 28px;
+    font-size:14px;
+  }
+  .footer-grid{
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;
+    padding-bottom:24px;
+    border-bottom:1px solid rgba(247,240,227,0.12);
+    margin-bottom:20px;
+  }
+  .footer-brand{font-family:var(--serif);font-size:20px;color:var(--sand);}
+  .footer-links{display:flex;gap:24px;flex-wrap:wrap;}
+  .footer-links a{text-decoration:none;color:var(--sand-dim);}
+  .footer-links a:hover{color:var(--gold-soft);}
+  .footer-bottom{
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    opacity:0.7;font-size:13px;
+  }
+
+  @media (max-width:760px){
+    section{ padding:72px 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">Nelz<span>.</span> Travelling Agency</a>
+    <a class="nav-cta" href="https://wa.me/27608422053?text=Hi%2C%20I%27d%20like%20to%20book%20a%20trip%20with%20Nelz%20Travelling%20Agency" target="_blank" rel="noopener">
+      Chat on WhatsApp
+    </a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-content">
+    <span class="eyebrow">South Africa · Trusted since 2019</span>
+    <h1>Nelz Travelling Agency</h1>
+    <p class="hero-tag">Booking South Africa, wherever you want to go.</p>
+    <p class="hero-sub">
+      Luxury made affordable. From Panorama Route views to Durban's beachfront,
+      quad biking weekends to family road trips, we book anywhere in South
+      Africa — backed by a registered business and a real person to call along the way.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://wa.me/27608422053?text=Hi%2C%20I%27d%20like%20to%20book%20a%20trip%20with%20Nelz%20Travelling%20Agency" target="_blank" rel="noopener">
+        Chat with us on WhatsApp
+      </a>
+      <span class="hero-note">Usually replies within the hour</span>
+    </div>
+  </div>
+</header>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Why book with us</span>
+      <h2>Travel planning without the guesswork</h2>
+      <p>Seven years of getting South Africa right, so your trip doesn't rest on luck.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Priced for real life</h3>
+        <p>Luxury trips without the luxury markup, plus easy payment plans that spread the cost — not the stress.</p>
+      </div>
+      <div class="why-card">
+        <h3>Registered, not risky</h3>
+        <p>Nelz Travelling Agency is a registered South African business. Book knowing exactly who you're dealing with.</p>
+      </div>
+      <div class="why-card">
+        <h3>Support the whole way</h3>
+        <p>From your first enquiry to your last connecting flight, we're one WhatsApp message away.</p>
+      </div>
+      <div class="why-card">
+        <h3>Sorted for groups</h3>
+        <p>Travelling with 7 or more? We arrange transport connections so your whole group moves together, no separate bookings needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="destinations">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Where we book</span>
+      <h2>Anywhere in South Africa, and beyond</h2>
+      <p>Bucket-list views, weekend adventures, and the spots middle-class SA actually visits — tell us your budget and dates, and we'll build the rest around you.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card">
+        <img src="godswindow.jpg" alt="Panorama Route, Mpumalanga">
+        <div class="dest-card-body">
+          <h3>Panorama Route</h3>
+          <p>God's Window, Blyde River Canyon and the waterfalls that make the drive worth it.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="durban.jpg" alt="Durban beachfront">
+        <div class="dest-card-body">
+          <h3>Durban</h3>
+          <p>Warm Indian Ocean days, the Golden Mile promenade, and the best curry on the coast.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="parys.jpg" alt="Parys and Stonehenge adventures">
+        <div class="dest-card-body">
+          <h3>Parys</h3>
+          <p>Quad biking, hiking and tubing down the Vaal at Stonehenge — a favourite weekend getaway.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="clarens.jpg" alt="Clarens in the Free State">
+        <div class="dest-card-body">
+          <h3>Clarens</h3>
+          <p>Mountain views, art galleries and cosy weekends in the Eastern Free State.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="bloemfontein.jpg" alt="Bloemfontein">
+        <div class="dest-card-body">
+          <h3>Bloemfontein</h3>
+          <p>The City of Roses — easy to reach and a solid stop for family visits and group trips.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="kruger.jpg" alt="Kruger National Park safari">
+        <div class="dest-card-body">
+          <h3>Kruger & the Lowveld</h3>
+          <p>Safari stays that fit your budget, from self-drive camps to private lodges.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="drakensberg.jpg" alt="The Drakensberg mountains">
+        <div class="dest-card-body">
+          <h3>The Drakensberg</h3>
+          <p>Hiking trails, mountain lodges, and views worth the drive inland.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="gardenroute.jpg" alt="The Garden Route coastline">
+        <div class="dest-card-body">
+          <h3>The Garden Route</h3>
+          <p>Forests, lagoons and cliffside stops from Mossel Bay to Storms River.</p>
+        </div>
+      </div>
+      <div class="dest-card">
+        <img src="capetown.jpg" alt="Cape Town and the Winelands">
+        <div class="dest-card-body">
+          <h3>Cape Town & Winelands</h3>
+          <p>Table Mountain sunrises, coastal drives, and long lunches in Stellenbosch.</p>
+        </div>
+      </div>
+    </div>
+    <div class="abroad-note">
+      <p>Ready to go further? <strong>We also book international trips — including Bali</strong> — for when it's time to leave South Africa altogether.</p>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <h4>7 years in business</h4>
+      <p>Trusted by travellers across South Africa since 2019.</p>
+    </div>
+    <div class="trust-item">
+      <h4>Registered SA business</h4>
+      <p>Book with confidence — no back-alley operators here.</p>
+    </div>
+    <div class="trust-item">
+      <h4>Constant WhatsApp support</h4>
+      <p>Real answers, throughout your booking and your trip.</p>
+    </div>
+  </div>
+</div>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Wanna know South Africa?</h2>
+    <p>We'll show you the hidden gems. Send us a message and let's plan your trip.</p>
+    <a class="btn-light" href="https://wa.me/27608422053?text=Hi%2C%20I%27d%20like%20to%20book%20a%20trip%20with%20Nelz%20Travelling%20Agency" target="_blank" rel="noopener">
+      Chat with us on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">Nelz Travelling Agency</div>
+      <div class="footer-links">
+        <a href="#top">Home</a>
+        <a href="https://wa.me/27608422053" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom" style="padding:0;">
+      <span>Nelz Travelling Agency is a registered South African business.</span>
+      <span>&copy; 2026 Nelz Travelling Agency. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
